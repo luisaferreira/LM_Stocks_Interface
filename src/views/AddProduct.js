@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./shared/Header";
 import Footer from "./shared/Footer";
 import axios from "axios";
+import { useHistory } from "react-router";
 
 class AddProduct extends Component {
     state = {
@@ -9,10 +10,10 @@ class AddProduct extends Component {
             id: 0,
             name: "",
             price: 0,
-            weight: 0, //ajeitar
+            weight: 0, 
             quantity: 0,
             lot: "",
-            validity: "2020-07-26T00:00:00",
+            validity: "2020-07-26T00:00:00", //Aqui em validity usa um datetime pra inicialmente setar a validade como a data e hora do momento
             description: ""
         }
     }
@@ -29,14 +30,11 @@ class AddProduct extends Component {
             console.log(123);
 
             axios.put(`https://localhost:5001/products/${this.state.product.id}`, this.state.product).then(response => {
-                console.log(123);
-                this.props.history.push("/products");
-                console.log(response.status);
+                window.alert("Produto atualizado com sucesso!");
             });
         } else {
             axios.post(`https://localhost:5001/products`, this.state.product).then(response => {
-                console.log(response.statusText);
-            this.props.history.push("/products");
+                window.alert("Produto adicionado com sucesso!");
             })
         }
     }
@@ -56,8 +54,11 @@ class AddProduct extends Component {
     render() {
         return (
             <div>
+                {/* Na header dessa página coloca um botão pra poder voltar pra página anterior */}
                 <Header />
                 <h2>{this.id} Details</h2>
+                {/* Se for mudar o input não esquece de colocar o value, name e id */}
+                {/* Tem q validar esse formulário, as instruções tão no documento com teu nome */}
                 <form style={{ display: "flex" },{ flexDirection: "column" }}>
                     <label htmlFor="name">Name:</label>
                     <input style={{ display: "block" }} value={this.state.product.name} onChange={this.onChange} name="name" id="name" type="text" placeholder="Name"></input>

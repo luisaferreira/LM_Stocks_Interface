@@ -1,0 +1,14 @@
+Usei alguns css-inline durante o projeto, mas foi pra deixar mais intuitivo pra mim durante o desenvolvimento e tals, cê não precisa deixar.
+
+VALIDAÇÃO:
+- Todos os campos precisam ser preenchidos.
+- Campo name tem no máximo 15 caracteres e aceita qualquer tipo de caractere.
+- Campo price, weight e quantity são numérico.
+- Campo description tem no máximo 100 caracteres e aceita qualquer tipo de caractere.
+- Em AddProduct.js seta a propriedade validity como valor padrão a data e hora atual.
+- Campo lot tem no máximo 20 caracteres e aceita apenas letras e números.
+
+INICIAR:
+- Baixa o código de marina e ajusta teu banco de dados pra poder rodar no teu pc (ela te ajuda se cê pedir).
+- Pra rodar o projeto sem dar problemas, cê tem que deixar o programa de marina rodando de fundo.
+- Quando cê vai na página de /products aparece um erro no console relacionado a "unique key" mas é frescura do react e projeto roda sem dar problemas.
