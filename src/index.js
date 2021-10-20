@@ -7,12 +7,15 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Products from './views/Products';
 import ProductDetails from './views/ProductDetails';
 import Error404 from './views/Error404';
+import AddProduct from './views/AddProduct';
 
 ReactDOM.render(
    <BrowserRouter>
       <Switch>
          <Route path="/" exact={true} component={App} />
          <Route path="/products" exact={true} component={Products} />
+         <Route path='/product/new' component={AddProduct} />
+         <Route path='/product/update/:id' component={AddProduct} />
          <Route path="/products/:id" component={ProductDetails} />
          <Route path="*" component={Error404} />
       </Switch>

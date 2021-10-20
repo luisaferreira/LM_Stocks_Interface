@@ -13,6 +13,7 @@ class ProductDetails extends Component {
 			<div>
 				<Header />
 				<h2>Product {this.id} Details</h2>
+				<h2>test</h2>
 				<Footer />
 			</div>
 		)
