@@ -26,7 +26,7 @@ class Products extends Component {
 	}
 
 	delete = (product) => {
-		if (window.confirm("Deseja realmente exclóir?")) {
+		if (window.confirm("Do you really want to delete this product?")) {
 			axios.delete(`https://localhost:5001/products/${product.id}`).then(response => {
 				this.list();
 			});

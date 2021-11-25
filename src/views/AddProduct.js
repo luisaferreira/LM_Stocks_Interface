@@ -32,11 +32,11 @@ class AddProduct extends Component {
             console.log(123);
 
             axios.put(`https://localhost:5001/products/${this.state.product.id}`, this.state.product).then(response => {
-                window.alert("Produto atualizado com sucesso!");
+                window.alert("Product updated sucessfully!");
             });
         } else {
             axios.post(`https://localhost:5001/products`, this.state.product).then(response => {
-                window.alert("Produto adicionado com sucesso!");
+                window.alert("Product added sucessfully!");
             })
         }
     }
