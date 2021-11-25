@@ -11,11 +11,11 @@
     font-size: 40px;
 }
 
-.name-product, .details-product {
+.name-product-details, .details-product {
     font-family: 'Quicksand', sans-serif;
 }
 
-.name-product {
+.name-product-details {
     font-size: 25px;
     margin: 1rem 0;
 }

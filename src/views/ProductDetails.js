@@ -38,7 +38,7 @@ class ProductDetails extends Component {
                 {/* Essas informações aqui cê ajeita na tela do jeito q quiser, mas lembra de usar o state.product */}
                 <main className="container-details">
                     <h1 className="title-details">Product details</h1>
-                    <h2 className="name-product">{this.state.product.name}</h2>
+                    <h2 className="name-product-details">{this.state.product.name}</h2>
                     <p className="details-product"><span className="strong">Lot:</span> {this.state.product.lot}</p>
                     <p className="details-product"><span className="strong">Price:</span> R$ {this.state.product.price}</p>
                     <p className="details-product"><span className="strong">Quantity:</span> {this.state.product.quantity} units</p>
