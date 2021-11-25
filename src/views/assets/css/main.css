@@ -3,14 +3,14 @@
     max-width: 1240px;
 
     margin: 0 auto;
-    /* background: #121214; */
+    padding: 10rem;
 
     font-family: 'Secular One', sans-serif;
 }
 
-.titulo {
-    
-    font-size: 20px;
+.title {
+    font-size: 25px;
+    color: #34cc94;
 }
 
 .descricao {
