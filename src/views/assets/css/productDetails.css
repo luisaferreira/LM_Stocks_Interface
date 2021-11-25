@@ -1,0 +1,30 @@
+.container-details {
+    width: 80%;
+    max-width: 1240px;
+
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.title-details {
+    font-family: 'Secular One', sans-serif;
+    font-size: 40px;
+}
+
+.name-product, .details-product {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.name-product {
+    font-size: 25px;
+    margin: 1rem 0;
+}
+
+.details-product {
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
+.strong {
+    font-weight: 600;
+}
