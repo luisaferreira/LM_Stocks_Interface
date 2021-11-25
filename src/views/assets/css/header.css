@@ -1,0 +1,29 @@
+
+
+.header {
+    background: #121214;
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+.logo {
+    width: 80px;
+}
+
+.navegacao {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
