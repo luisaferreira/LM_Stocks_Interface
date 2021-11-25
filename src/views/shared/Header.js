@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
 import logo from '../assets/images/logo.png';
-import '../assets/css/header.css'
+import '../assets/css/header.css';
+
 class Header extends Component {
   render() {
     return (
@@ -16,8 +17,6 @@ class Header extends Component {
 
           <a href="https://github.com/luisaferreira/LM_Stocks_Interface" className="links">Github</a>
         </div>
-
-
       </div>
     )
   }
